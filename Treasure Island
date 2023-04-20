@@ -1,0 +1,20 @@
+print("Welcome to Treasure island. Your mission is to find the treasure")
+road = input(
+    'You\'re at a crossroad. Do you want to turn left or right ? "left" or "right"."').lower()
+
+if (road == "right"):
+    print("Fall into a hole. You lose !")
+else:
+    vehicle = input(
+        '"Do you want to reach the island by swimming or waitting for the boat? "swim" or "wait"').lower()
+    if (vehicle == "wait"):
+        boatdoor = input(
+            '"which door will you choose to let you reach the Treasure? " blue","yeallow", "red"').lower()
+        if (boatdoor == "blue"):
+            print("Beaten by beasts. Game over")
+        elif (boatdoor == "red"):
+            print("Burned by fired. Game over")
+        elif (boatdoor == "yeallow"):
+            print("You Win with 100 million Dollar")
+    else:
+        print("Attacked by Crocodie. Game over")
