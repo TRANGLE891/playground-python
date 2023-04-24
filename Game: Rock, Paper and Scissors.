@@ -1,0 +1,23 @@
+import random
+game_rules = ["Rock", "payper", "scissors"]
+player = int(
+    input("What do you chosse? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
+if player > 2 or player < 0:
+    print("the number you gave is invalid. You lose ")
+else:
+    print(
+        f"You chosed: {game_rules[player]}")
+    computer = random.randint(0, 2)
+
+    print(f"Computer chosed:")
+    print(game_rules[computer])
+    if player == 0 and computer == 2:
+        print("you Win !")
+    elif player == 2 and computer == 0:
+        print("You lose!")
+    elif computer > player:
+        print("you lose !")
+    elif computer < player:
+        print("you Win!")
+    elif computer == player:
+        print("it's a draw")
