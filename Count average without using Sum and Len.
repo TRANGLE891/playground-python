@@ -1,0 +1,9 @@
+student_heights = input("Input a list of student heights ").split() #.split() to make space between numbers. 
+total = 0
+count = 0
+for n in range(0, len(student_heights)):
+    student_heights[n] = int(student_heights[n])
+    total = total + student_heights[n]
+    count = count + 1
+average = total / count
+print(average)
