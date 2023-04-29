@@ -1,8 +1,8 @@
 student_scores = input("Input a list of student scores ").split()
-position = 0
-for n in range(0, len(student_scores)):
-    student_scores[n] = int(student_scores[n])
-    position = position+1
+length = 0
+for position in range(0, len(student_scores)):
+    student_scores[position] = int(student_scores[position])
+    length = length+1
 
 print(student_scores)
 maxscore = 0
